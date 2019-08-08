@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background_person"
+    android:orientation="vertical"
+    tools:context=".Personagens_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnNero"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:drawableLeft="@drawable/ic_border"
+                android:background="@drawable/ic_nero"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnDante"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:background="@drawable/ic_dante"
+                android:drawableLeft="@drawable/ic_border"
+                android:layout_toRightOf="@id/btnNero"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnV"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:background="@drawable/ic_nero"
+                android:drawableLeft="@drawable/ic_border"
+                android:layout_below="@id/btnNero"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnNico"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_border"
+                android:layout_toRightOf="@id/btnV"
+                android:background="@drawable/ic_dante"
+                android:layout_below="@id/btnDante" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
