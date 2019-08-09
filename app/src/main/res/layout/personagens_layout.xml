@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:paddingTop="20dp"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -25,8 +26,17 @@
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:drawableLeft="@drawable/ic_border"
-                android:background="@drawable/ic_nero"
-                android:layout_marginBottom="10dp"/>
+                android:background="@drawable/ic_nero"/>
+
+            <TextView
+                android:id="@+id/nero"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnNero"
+                android:text="NERO"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
 
             <Button
                 android:id="@+id/btnDante"
@@ -35,17 +45,26 @@
                 android:background="@drawable/ic_dante"
                 android:drawableLeft="@drawable/ic_border"
                 android:layout_toRightOf="@id/btnNero"
-                android:layout_marginLeft="30dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/dante"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnDante"
+                android:text="NERO"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
 
             <Button
                 android:id="@+id/btnV"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
-                android:background="@drawable/ic_nico"
+                android:background="@drawable/ic_v"
                 android:drawableLeft="@drawable/ic_border"
-                android:layout_below="@id/btnNero"
-                android:layout_marginBottom="10dp"/>
+                android:layout_below="@id/nero"
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/btnNico"
@@ -54,17 +73,17 @@
                 android:layout_marginLeft="30dp"
                 android:drawableLeft="@drawable/ic_border"
                 android:layout_toRightOf="@id/btnV"
-                android:background="@drawable/ic_v"
-                android:layout_marginBottom="10dp"
-                android:layout_below="@id/btnDante" />
+                android:background="@drawable/ic_nico"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/dante" />
 
             <Button
                 android:id="@+id/btnTrish"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_below="@id/btnNico"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/ic_nico"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_trish"
                 android:drawableLeft="@drawable/ic_border" />
 
             <Button
@@ -74,7 +93,27 @@
                 android:layout_below="@id/btnV"
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@id/btnV"
-                android:background="@drawable/ic_v"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_lady"
+                android:drawableLeft="@drawable/ic_border" />
+
+            <Button
+                android:id="@+id/btnVergil"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/btnTrish"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_vergil"
+                android:drawableLeft="@drawable/ic_border" />
+
+            <Button
+                android:id="@+id/btnSparda"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/btnLady"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/btnV"
+                android:background="@drawable/ic_sparda"
                 android:drawableLeft="@drawable/ic_border" />
         </RelativeLayout>
     </LinearLayout>
