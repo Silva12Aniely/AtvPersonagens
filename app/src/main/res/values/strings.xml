@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Personagens</string>
+    <string name="nero">NERO</string>
+    <string name="dante">DANTE</string>
+    <string name="v">V</string>
+    <string name="nico">NICO</string>
+    <string name="trish">TRISH</string>
+    <string name="lady">LADY</string>
+    <string name="vergil">VERGIL</string>
+    <string name="sparda">SPARDA</string>
+    <string name="entrar">Entrar</string>
+    <string name="sair">Sair</string>
 </resources>

@@ -9,112 +9,188 @@
     android:orientation="vertical"
     tools:context=".Personagens_Activity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:paddingTop="20dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnNero"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:drawableLeft="@drawable/ic_border"
-                android:background="@drawable/ic_nero"/>
-
-            <TextView
-                android:id="@+id/nero"
-                android:layout_width="150dp"
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btnNero"
-                android:text="NERO"
-                android:textColor="#fff"
-                android:textSize="18sp"
-                android:textAlignment="center"/>
+                android:layout_gravity="center">
 
-            <Button
-                android:id="@+id/btnDante"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:background="@drawable/ic_dante"
-                android:drawableLeft="@drawable/ic_border"
-                android:layout_toRightOf="@id/btnNero"
-                android:layout_marginLeft="30dp"/>
+                <Button
+                    android:id="@+id/btnNero"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:drawableLeft="@drawable/ic_border"
+                    android:background="@drawable/ic_nero"/>
 
-            <TextView
-                android:id="@+id/dante"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btnDante"
-                android:text="NERO"
-                android:textColor="#fff"
-                android:textSize="18sp"
-                android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/nero"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnNero"
+                    android:text="@string/nero"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"/>
 
-            <Button
-                android:id="@+id/btnV"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:background="@drawable/ic_v"
-                android:drawableLeft="@drawable/ic_border"
-                android:layout_below="@id/nero"
-                android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnDante"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_dante"
+                    android:drawableLeft="@drawable/ic_border"
+                    android:layout_toRightOf="@id/btnNero"
+                    android:layout_marginLeft="30dp"/>
+                <!--Right-->
+                <TextView
+                    android:id="@+id/dante"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/nero"
+                    android:layout_below="@id/btnDante"
+                    android:gravity="center"
+                    android:text="@string/dante"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
 
-            <Button
-                android:id="@+id/btnNico"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="30dp"
-                android:drawableLeft="@drawable/ic_border"
-                android:layout_toRightOf="@id/btnV"
-                android:background="@drawable/ic_nico"
-                android:layout_marginBottom="20dp"
-                android:layout_below="@id/dante" />
+                <Button
+                    android:id="@+id/btnV"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_v"
+                    android:drawableLeft="@drawable/ic_border"
+                    android:layout_below="@id/nero"/>
 
-            <Button
-                android:id="@+id/btnTrish"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_below="@id/btnNico"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/ic_trish"
-                android:drawableLeft="@drawable/ic_border" />
+                <TextView
+                    android:id="@+id/V"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnV"
+                    android:text="@string/v"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
 
-            <Button
-                android:id="@+id/btnLady"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_below="@id/btnV"
-                android:layout_marginLeft="30dp"
-                android:layout_toRightOf="@id/btnV"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/ic_lady"
-                android:drawableLeft="@drawable/ic_border" />
+                <Button
+                    android:id="@+id/btnNico"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/ic_border"
+                    android:layout_toRightOf="@id/btnV"
+                    android:background="@drawable/ic_nico"
+                    android:layout_below="@id/dante" />
 
-            <Button
-                android:id="@+id/btnVergil"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_below="@id/btnTrish"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/ic_vergil"
-                android:drawableLeft="@drawable/ic_border" />
+                <TextView
+                    android:id="@+id/nico"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/V"
+                    android:layout_below="@id/btnNico"
+                    android:gravity="center"
+                    android:text="@string/nico"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
 
-            <Button
-                android:id="@+id/btnSparda"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_below="@id/btnLady"
-                android:layout_marginLeft="30dp"
-                android:layout_toRightOf="@id/btnV"
-                android:background="@drawable/ic_sparda"
-                android:drawableLeft="@drawable/ic_border" />
-        </RelativeLayout>
-    </LinearLayout>
+                <Button
+                    android:id="@+id/btnTrish"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/V"
+                    android:background="@drawable/ic_trish"
+                    android:drawableLeft="@drawable/ic_border" />
+
+                <TextView
+                    android:id="@+id/Trish"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnTrish"
+                    android:text="@string/trish"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnLady"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/nico"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/btnTrish"
+                    android:background="@drawable/ic_lady"
+                    android:drawableLeft="@drawable/ic_border" />
+
+                <TextView
+                    android:id="@+id/lady"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Trish"
+                    android:layout_below="@id/btnLady"
+                    android:gravity="center"
+                    android:text="@string/lady"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnVergil"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/Trish"
+                    android:background="@drawable/ic_vergil"
+                    android:drawableLeft="@drawable/ic_border" />
+
+                <TextView
+                    android:id="@+id/Vergil"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnVergil"
+                    android:text="@string/vergil"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/btnSparda"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/lady"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/btnVergil"
+                    android:background="@drawable/ic_sparda"
+                    android:drawableLeft="@drawable/ic_border" />
+
+                <TextView
+                    android:id="@+id/Sparda"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Vergil"
+                    android:layout_below="@id/btnSparda"
+                    android:gravity="center"
+                    android:text="@string/sparda"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
