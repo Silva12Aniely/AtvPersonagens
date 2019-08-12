@@ -18,8 +18,8 @@
         <ImageView
             android:layout_width="350dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_dmc"
-            android:layout_marginBottom="55dp"/>
+            android:layout_marginBottom="55dp"
+            android:src="@drawable/logo_dmc" />
 
         <TextView
             android:layout_width="match_parent"
@@ -31,11 +31,13 @@
             android:textSize="25sp" />
 
         <EditText
+            android:id="@+id/txtlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#fff"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="#fff"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,28 +50,34 @@
             android:textSize="25sp" />
 
         <EditText
+            android:id="@+id/txtpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#fff"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="#fff"/>
 
         <Button
+            android:id="@+id/entrar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/border_login"
             android:text="@string/entrar"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:textSize="18sp" />
 
         <Button
+            android:id="@+id/sair"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/border_login"
             android:text="@string/sair"
             android:textColor="#fff"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 </LinearLayout>
